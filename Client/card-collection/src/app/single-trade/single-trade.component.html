@@ -1,0 +1,41 @@
+<!-- <div *ngFor="let card of cards">
+    <p>{{card.name}}</p>
+</div> -->
+<div class="container">
+    <div class="row">
+        <div class="list-group-item d-flex w-100 justify-content-between">
+            <div class="col-md-3" *ngFor="let c of cards">
+                <h4 style="text-align: center;">Requested Card:</h4>
+                <hr/>
+                    <img src="{{c.image}}">
+            </div>
+            <hr id="vert"/>
+            <div class="col-md-3" >
+                <h4 style="text-align: center;">Card Offered:</h4>
+                <hr/>
+                <div  *ngFor="let c of reqList">
+                    <img src="{{c.image}}">
+                </div>
+               
+            
+            </div>
+            <hr id="vert"/>
+            <div class="col-lg-2" style="text-align: center;">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="mr-5">
+                    <h4 style="text-align: center;">User:</h4>
+                    <p style="text-align: center;">{{user.username}}</p>
+                </div>
+                <div class="mr-5">
+                    <a href="trade/{{tradeId}}" style="text-align: center; ">
+                        <button class="btn btn-primary my-2 my-sm-0"> View Trade</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

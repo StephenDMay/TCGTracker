@@ -1,0 +1,16 @@
+<div>
+<div class="card" style="width: 17.3rem;"  >
+    <div class="card-header">
+      Cards By Type
+    </div>
+<div class="scroll" style="max-height: 194px;">
+    <ul class="list-group list-group-flush"  *ngFor="let type of types">
+        <a href="/collection/{{type}}">
+      <li class="list-group-item">
+        <p>{{type}} </p>
+      </li>
+        </a>
+    </ul>
+  </div>
+</div>
+</div>

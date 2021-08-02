@@ -1,0 +1,6 @@
+<a *ngIf="!loggedIn" href="http://localhost:4200/account/login">
+    <button  class="btn btn-outline-success my-2 my-sm-0">Login</button>
+  </a>
+  <a  *ngIf="loggedIn">
+    <button class="btn btn-outline-danger my-2 my-sm-0" (click)="logout(); reload();">Logout</button>
+  </a>

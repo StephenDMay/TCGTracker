@@ -1,0 +1,35 @@
+<div class="container">
+<div class="row">
+    
+    <div class="col-md-3 align-items-stretch" *ngFor="let set of sets" >
+        
+        <div class="card text-center text-white bg-light align-items-stretch mb-4" style="width: 100%; min-height:90%; max-height: 90%; box-shadow: black;">
+            <br/>
+            <br/>
+            <a href="http://localhost:4200/set/{{set.id}}" >
+                <div class="card-header rounded" style="height: 100%;">
+                    <img class="card-img-top align-items-stretch" src="{{set.image}}" alt="Set logo" 
+                    style="
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    height: 100px;
+                    width: 70%;
+                    box-shadow: black;">
+                </div>
+
+                <div class="card-body align-items-stretch" >
+                    <h5 class="card-title">{{set.name}}</h5>
+                    <app-progress-bar [id]="set.id"></app-progress-bar>
+
+                </div>
+            </a>
+          </div>
+    </div>
+    <br/>
+<br/>
+<br/>
+<br/>
+
+</div>
+</div>
+

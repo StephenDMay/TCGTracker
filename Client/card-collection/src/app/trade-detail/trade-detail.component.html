@@ -1,0 +1,29 @@
+<div class="container" style="justify-content: center;">
+    <h5 class="row" style="text-align: center; justify-content: center;">Viewing trade that has been posted by {{user.username}}.</h5>
+    <hr/>
+    <div class="row" style="text-align: center; justify-content: center;">
+        <div style="text-align: center; justify-content: center;" class="col-lg-5 " *ngFor="let card of cards">
+            <h5>{{user.username}} is Requesting:</h5>
+            <hr/>
+            <p>{{card.name}}</p>
+            <img src="{{card.image}}">
+        </div>
+        <div>
+            <hr id="vert"/>
+            <button *ngIf="offer != null;" class="btn btn-primary my-2 my-sm-0">Submit Trade</button>
+        </div>
+        <div class="col-lg-5">
+            <h5>{{user.username}} is Offering:</h5>
+            <hr/>
+            <p>{{offer.name}}</p>
+            <img src="{{offer.image}}">
+            
+        </div>
+
+    </div>
+
+</div>
+    
+    
+
+

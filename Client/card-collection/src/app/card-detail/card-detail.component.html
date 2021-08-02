@@ -1,0 +1,64 @@
+<div class="container">
+   <div class="row">
+      <div class="col-lg-4">
+         
+         <img class="singleCard" src={{card.image}}>
+         <br/>
+         <br/>
+         <div>
+            <div *ngIf="!cardInCollection()" class="row" style="justify-content: center; width: 100%;">
+               <app-add-to-collection ></app-add-to-collection>
+            </div>
+            <br/>
+            <div *ngIf="!cardInCollection()" class="row" style="justify-content: center; width: 100%;">
+               <app-add-trade [cardId]="cardId"></app-add-trade>
+            </div>
+            <div *ngIf="cardInCollection()" class="row" style="justify-content: center; width: 100%;">
+              <app-remove-from-collection></app-remove-from-collection>
+            </div>
+         </div>
+         
+         
+      </div>
+      <div class="border rounded col-lg-6" style="height: 70%; margin-top: 4.5%;">
+         
+         <div class="row" style="justify-content: center;">
+            <h1 >{{card.name}}</h1>
+
+         </div> 
+         <hr/>
+         <div class="container col-lg-10">
+            <div class="row">
+               <div class="col-lg-7">
+                  <h4>SuperType</h4>
+                  <p>{{card.supertype}}</p>
+                     <br/>
+                     <br/>
+                  <h4>Type</h4>
+                  <p>{{card.type}}</p>
+                     <br/>
+                     <br/>
+                  <h4>Illustrator</h4>
+                  <p>{{card.illustrator}}</p>
+                     <br/>
+                     <br/>
+                 
+               </div>
+               <div class="col-lg-5">
+                  <h4>HP</h4>
+                  <p>{{card.hp}}</p>
+                     <br/>
+                     <br/>
+                  <h4>Rarity</h4>
+                  <p>{{card.rarity}}</p>
+                     <br/>
+                     <br/>
+                  <h4>Release Year</h4>
+                  <p>{{card.releaseYear}}</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+

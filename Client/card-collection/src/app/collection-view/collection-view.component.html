@@ -1,0 +1,63 @@
+<div class="container">
+
+    <h2 style="text-align: center;">Collect 'Em All Dashboard</h2>
+    <hr/>
+
+    <div class="d-flex justify-content-center"  style="justify-content: center;">
+        <div class="col-md-3">
+        <a href="collection/myCards">
+            <div  class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">{{count}}</h5>
+                    <p class="card-text" style="text-align: center;">Cards In Collection</p>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-3">
+        <a>
+            <div  class="card text-white bg-danger mb-8" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">0</h5>
+                    <p class="card-text" style="text-align: center;">Series Completed</p>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-3">
+        <a href="cardDetails/bw11-19">
+            <div  class="card text-white bg-warning mb-8" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">$4.23</h5>
+                    <p class="card-text" style="text-align: center;">Highest Valued Card</p>
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-3">
+            <a>
+                <div  class="card text-white bg-success mb-8" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">${{value}}</h5>
+                        <p class="card-text" style="text-align: center;">Estimated Collection Value</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-md-offset-1 mr-2 scroll">
+            <app-collection-types></app-collection-types>
+        </div>
+        <div class="col-md-offset-1 mr-2">
+            <app-collection-supers></app-collection-supers>
+        </div>
+        <div class="col-md-offset-1 mr-2">
+            <app-collection-rarities></app-collection-rarities>
+        </div>
+        <div class="col-md-offset-1">
+            <app-collection-series></app-collection-series>
+        </div>
+    </div>
+</div>

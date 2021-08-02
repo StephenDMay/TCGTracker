@@ -1,0 +1,84 @@
+Pages:
+
+My Collection - Display collection/search filters
+
+Search - Search bar that prints out results of query
+
+Choose Sets - Display list of sets
+
+View set - Display all cards by set - indicate if in collection or not
+
+My collection - Same as search page, but filter through  collection
+
+Trade Board - View Cards for trade
+
+Add to board - post a card to trade board
+
+Single Card View - veiw larger image of card and more details
+
+Offer trade - Single Card view + trade offers
+
+User Stories:
+
+
+As a user I should be able to view a card and its details
+
+As a user I should be able to search/filter for a card
+
+As a user I should be able to view a list of sets
+
+As a user I should be able to view all the cards in a set
+
+As a user I should be able to distinguish between cards I do have and do not have
+
+As a user I should be able to add a card to my collection
+
+As a user I should be able to view a trade board of cards being offered for trade
+
+As a user I should be able to offer a trade from my collection
+
+As a user I should be able to post a card to the trade board
+
+
+Database models:
+
+
+Models:
+	- Users
+		- Id
+		- Name
+	- UserCards
+		- UserId
+		- CardId
+	- Cards
+		- Id
+		- Name
+		- Type
+		- SetId
+		- Rarity
+		- NumberInSet
+		- Illustrator
+		- Image
+		- Price (sub categories: High, Market, Low)
+		- Release year
+	- Trades
+		- Id
+		- UserId
+		
+	- Requests
+		- Id
+		- TradeId
+	- Offers
+		- Id
+		- TradeId
+		- UserId (user offering trade)
+	- CardRequests
+		- CardId
+		- RequestId
+	- CardOffers
+		- CardId
+		- OfferId
+
+		
+		
+	
